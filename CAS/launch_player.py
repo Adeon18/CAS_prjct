@@ -1,11 +1,15 @@
 '''
-A module that contains a media player class and everything regarding media
+A module that can show media.
+
+Contains a media player class that can show media in different ways,
+including some parts.
+
+Classes:
+    Player: That media player class.
 '''
 import time, vlc
 from os import path
 
-main_folder = path.dirname(__file__)
-movie_folder = path.join(main_folder, 'movies')
 
 class Player:
     '''
@@ -56,8 +60,11 @@ class Player:
         '''
         Plays a specific part of the media
 
-        start: must be in seconds
-        duration: must be in seconds
+        Args:
+          start:
+            Integer, must be in seconds
+          duration:
+            Integer, must be in seconds
         '''
         self.player.play()
         # set_time takes only miliseconds
@@ -70,11 +77,12 @@ class Player:
 
 if __name__ == '__main__':
     from os import path
+
     main_folder = path.dirname(__file__)
     movie_folder = path.join(main_folder, 'movies')
     # vid_player = Player("the_lil_prince.mp4")
     vid_player = Player(path.join(movie_folder, 'the_lil_prince.mp4'))
 
-    vid_player.play_a_part(1000, 10)
+    vid_player.play()
     # print(vid_player.return_duration())
     # vid_player.play_a_part(10, 8)
