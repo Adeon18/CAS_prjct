@@ -17,9 +17,6 @@ from os import path
 import srt
 import nltk
 
-# This is for comparing
-nltk.download('stopwords')
-
 
 def read_text(path_to_file: str) -> list:
     '''

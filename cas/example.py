@@ -22,7 +22,7 @@ import datetime
 from os import path
 from math import floor, ceil
 
-import compare, launch_player, get_subtitles
+from cas import compare, launch_player, get_subtitles
 
 def get_user_input():
     '''
