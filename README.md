@@ -16,8 +16,7 @@ for teaching literature along with showing the adaptation.
 In file example.py there is a good example of most of the modules and functions usage.
 The file works really well with "The little prince" movie.
 To get good use of the package you should have a txt file with the book text and an srt
-file with the book adaptation subtitles. Also you can buy a movie to get the max out of
-the package.
+file with the book adaptation subtitles(https://subdl.com/ - a way to get free subtitles to most movies). Also you can buy a movie to get the max out of the package.
 Package uses nltk, python-vlc, srt, pandas python modules and a VLC Video Player. Be careful with srt
-module on windows, as it is a bit bugged.
+module on Windows, as it is a bit bugged.
 If this information was not enough, check out each module for Google-style python documentation.

@@ -22,7 +22,8 @@ import datetime
 from os import path
 from math import floor, ceil
 
-from cas import compare, launch_player, get_subtitles
+import compare, launch_player, get_subtitles
+
 
 def get_user_input():
     '''
@@ -34,26 +35,26 @@ def get_user_input():
 
     return (book_name, citiation, movie_flag)
 
-
-try:
-    book_name, citiation, flag = get_user_input()
-    main_folder = path.dirname(__file__)
-    movie_info = path.join(main_folder, book_name.lower().replace(' ', '_'))
-
-    start, end = compare.check_for_presence(citiation,\
-        get_subtitles.return_sub_list(get_subtitles.read_data(path.join(movie_info, 'subtitles.srt'))))
-
+if __name__ =='__main__':
     try:
-        print(f'{datetime.timedelta(seconds=start)} - {datetime.timedelta(seconds=end)}')
-    except:
-        print(start, end)
+        book_name, citiation, flag = get_user_input()
+        main_folder = path.dirname(__file__)
+        movie_info = path.join(main_folder, book_name.lower().replace(' ', '_'))
 
-    if flag.lower() == 'yes':
-        player = launch_player.Player(path.join(movie_info, 'movie.mp4'))
-        # 17 is a cooldown for the little prince movie
-        player.play_a_part(floor(start) + 17, 3*ceil(end - start))
-except:
-    print('Write valid names or add missing files')
+        start, end = compare.check_for_presence(citiation,\
+            get_subtitles.return_sub_list(get_subtitles.read_data(path.join(movie_info, 'subtitles.srt'))))
+
+        try:
+            print(f'{datetime.timedelta(seconds=start)} - {datetime.timedelta(seconds=end)}')
+        except:
+            print(start, end)
+
+        if flag.lower() == 'yes':
+            player = launch_player.Player(path.join(movie_info, 'movie.mp4'))
+            # 17 is a cooldown for the little prince movie
+            player.play_a_part(floor(start) + 17, 3*ceil(end - start))
+    except:
+        print('Write valid names or add missing files')
 
 
 
