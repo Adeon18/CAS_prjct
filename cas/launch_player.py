@@ -76,13 +76,4 @@ class Player:
 
 
 if __name__ == '__main__':
-    from os import path
-
-    main_folder = path.dirname(__file__)
-    movie_folder = path.join(main_folder, 'movies')
-    # vid_player = Player("the_lil_prince.mp4")
-    vid_player = Player(path.join(movie_folder, 'the_lil_prince.mp4'))
-
-    vid_player.play()
-    # print(vid_player.return_duration())
-    # vid_player.play_a_part(10, 8)
+    pass

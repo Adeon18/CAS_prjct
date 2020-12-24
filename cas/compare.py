@@ -141,16 +141,4 @@ def check_for_presence(citiation: str, subtitle_list: list):
 
 
 if __name__ == '__main__':
-    from math import floor, ceil
-    from get_subtitles import return_sub_list, read_data
-    from launch_player import Player
-    main_folder = path.dirname(__file__)
-    movie_folder = path.join(main_folder, 'movies')
-    subtitles = path.join(main_folder, 'subtitles')
-    p = Player(path.join(movie_folder, 'the_lil_prince.mp4'))
-    # print(read_text('lil_prince.txt'))
-    # print(compare_subt_w_txt(return_sub_list(read_data('lil_prince_subtitles.srt')) ,read_text('lil_prince.txt')))
-    strt, end = check_for_presence('But if you tame me, then we shall need each other', return_sub_list(read_data(path.join(subtitles, 'lil_prince_subtitles.srt'))))
-    print(floor(strt), ceil(end - strt))
-    p.play_a_part(floor(strt) + 17, 3*ceil(end - strt))
-    # print(strt, end)
+    pass

@@ -60,7 +60,4 @@ def find_adaptations(df_movies: pd.DataFrame, df_liter: pd.DataFrame) -> pd.Data
 
 
 if __name__ == '__main__':
-    main_folder = path.dirname(__file__)
-    data_folder = path.join(main_folder, 'data')
-    print(find_adaptations(get_all_movies(path.join(data_folder, 'data.tsv')),
-          get_all_literature(path.join(data_folder, 'names.csv'))))
+    pass

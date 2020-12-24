@@ -50,6 +50,4 @@ def return_sub_list(data: str) -> list:
 
 
 if __name__ == '__main__':
-    main_folder = path.dirname(__file__)
-    subtitles = path.join(main_folder, 'subtitles')
-    print(return_sub_list(read_data(path.join(subtitles, 'lil_prince_subtitles.srt'))))
+    pass
