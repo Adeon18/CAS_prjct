@@ -2,9 +2,11 @@ __pycache__
 data
 movie.mp4
 .vscode
-the_little_prince
 setup.py
 dist
 build
 CAS_Adeon18.egg-info
 report.txt
+similarities.txt
+CAS_Ostap_Trush.egg-info
+report.pdf
