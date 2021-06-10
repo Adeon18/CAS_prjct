@@ -1,0 +1,8 @@
+click==8.0.1
+joblib==1.0.1
+nltk==3.6.2
+python-vlc==3.0.12118
+regex==2021.4.4
+srt==3.4.1
+str==0.1
+tqdm==4.61.0

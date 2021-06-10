@@ -1,22 +1,47 @@
 # CAS_project
-CAS is short for Citiation Adaptation Search
-CAS is a package that has the modules and methods that can take book citiations
-and return a book adaptation movie part with that citiation said by a hero, or just the
-seconds, when that citiation is said in the movie.
-Also there are modules that can find the similar phrases between the book
-and a movie based on that book and write them into a file.
-There is a functioning media player in case you bought a film
-and want to see the citiations played for you.
 
-This package is very handy for people who like to read and watch movies
-as it combines 2 pleasent things into one, also it can get people, who like
-watching movies to read. Also the package can be used in schools by teachers
-for teaching literature along with showing the adaptation.
+## Description
 
-In file example.py there is a good example of most of the modules and functions usage.
-The file works really well with "The little prince" movie.
-To get good use of the package you should have a txt file with the book text and an srt
-file with the book adaptation subtitles(https://subdl.com/ - a way to get free subtitles to most movies). Also you can buy a movie to get the max out of the package.
-Package uses nltk, python-vlc, srt, pandas python modules and a VLC Video Player. Be careful with srt
-module on Windows, as it is a bit bugged.
-If this information was not enough, check out each module for Google-style python documentation.
+**CAS** is short for **C**itiation **A**daptation **S**earch. This project lets you find _any_ movie book citiation is a movie that is based on that book. 
+
+The program can return the time of the citiation and even play the exact movie part, _if a movie is installed on you mashine_.
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Adeon18/CAS_prjct.git
+```
+
+Go to the folder:
+
+```bash
+cd CAS_prjct
+```
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the needed libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+After installation you will need to download the **book text** and **movie citiations** in order for the program to work. Also if you want the movie played, you'll need to _download a movie_.
+
+After that go to file ```example.py``` and read all the steps needed to wire up you data.
+
+## Contributing
+
+- Fork the repository
+- Make your change in your forked repository
+- Make a pull request and add a rewiever among us(You can see who to add below)
+
+## Credits
+
+- [Subtitles](https://subdl.com/)
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
